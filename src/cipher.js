@@ -1,6 +1,6 @@
-const cifrar = (offset, texto) => {
+const cifrar = (offset, textoInicial) => {
   let textoFinal="";
-  const textoMayuscula= texto.toUpperCase();
+  const textoMayuscula= textoInicial.toUpperCase();
   for(var i=0; i<textoMayuscula.length; i++){
     if(textoMayuscula[i]===" "){
       textoFinal+=" ";
@@ -9,12 +9,10 @@ const cifrar = (offset, texto) => {
   textoFinal+= String.fromCharCode((textoMayuscula.charCodeAt(i)+65+offset)%26+65);
 }}
 return textoFinal;
-
 }
-
-const descifrar = (offset, texto) => {
+const descifrar = (offset, textoInicial) => {
   let textoFinal="";
-  const textoMayuscula = texto.toUpperCase();
+  const textoMayuscula = textoInicial.toUpperCase();
   for(var i=0; i<textoMayuscula.length; i++){
     if(textoMayuscula[i]==" "){
       textoFinal+=" ";
@@ -25,7 +23,6 @@ const descifrar = (offset, texto) => {
   }
 return textoFinal;
 }
-
 window.cipher = {
   encode: cifrar,
   decode: descifrar

@@ -1,19 +1,19 @@
 const comenzarResponse= document.getElementById("comenzar");
-const limpiarResponse= document.getElementById("limpiar");
-const volverResponse= document.getElementById("volver");
+const btnCifrar= document.getElementById("cifrar");
+const btnDescifrar= document.getElementById("descifrar");
 
 btnCifrar.addEventListener("click" , () => {
   const textoInicial= document.getElementById("textoACifrar").value;
-  let offset=document.getElementById("offset").value;
-  let resultado= window.cipher.encode(offset, texto);
+  let offset= (parseInt(document.getElementById("offset").value))%26;
+  let resultado= window.cipher.encode(offset, textoInicial);
   let textareaFinal= document.getElementById("AquiTextoCifrado");
   textareaFinal.value = resultado;
 });
 
 btnDescifrar.addEventListener("click" , () => {
   const textoInicial= document.getElementById("textoACifrar").value;
-  let offset=document.getElementById("offset").value;
-  let resultado= window.cipher.decode(offset, texto);
+  let offset= (parseInt(document.getElementById("offset").value))%26;
+  let resultado= window.cipher.decode(offset, textoInicial);
   let textareaFinal= document.getElementById("AquiTextoCifrado");
   textareaFinal.value = resultado;
 });

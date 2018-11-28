@@ -77,6 +77,7 @@ header{
 }
 .textarea{
   width: 70%;
+  height: 100px;
 }
 
 #textoACifrar , #AquiTextoCifrado{
@@ -90,7 +91,7 @@ header{
 }
 
 
-#cifrar , #descifrar{
+#cifrar , #descifrar, #limpiar , #volver{
   border-radius: 8px;
   padding: 12px 20px;
   font-size: 15px;
@@ -102,18 +103,12 @@ header{
     cursor: pointer;
     font-family: 'Roboto';
 }
+
 #limpiar , #volver{
-  border-radius: 8px;
-  padding: 12px 20px;
-  font-size: 15px;
-  text-decoration: none;
-  margin: 22px;
-  color: #fff;
-  text-transform: uppercase;
+
     background: #ff922b;
-    cursor: pointer;
-    font-family: 'Roboto';
-  width: 100px;
+
+
 }
 
  #descifrar:hover {
@@ -122,6 +117,7 @@ header{
 #cifrar:hover {
  background-color: #6FC6FF;
 }
+
 
 
 @media screen and (max-width:780px) {
