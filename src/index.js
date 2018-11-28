@@ -4,7 +4,7 @@ const btnDescifrar= document.getElementById("descifrar");
 
 btnCifrar.addEventListener("click" , () => {
   const textoInicial= document.getElementById("textoACifrar").value;
-  let offset= (parseInt(document.getElementById("offset").value))%26;
+  let offset= (parseInt(document.getElementById("offset").value));
   let resultado= window.cipher.encode(offset, textoInicial);
   let textareaFinal= document.getElementById("AquiTextoCifrado");
   textareaFinal.value = resultado;
@@ -12,7 +12,7 @@ btnCifrar.addEventListener("click" , () => {
 
 btnDescifrar.addEventListener("click" , () => {
   const textoInicial= document.getElementById("textoACifrar").value;
-  let offset= (parseInt(document.getElementById("offset").value))%26;
+  let offset= (parseInt(document.getElementById("offset").value));
   let resultado= window.cipher.decode(offset, textoInicial);
   let textareaFinal= document.getElementById("AquiTextoCifrado");
   textareaFinal.value = resultado;
