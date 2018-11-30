@@ -1,4 +1,38 @@
-# Cifrado César
+# **Cesar Cipher**
+
+## Cifrado César
+
+Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
+
+![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+
+El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
+
+Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
+
+- La letra A se cifra como D.
+- La palabra CASA se cifra como FDVD.
+- Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+- Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+
+En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
+
+## Principales usuarios del producto
+
+Los usuarios de la tecnología de cifrado, a modo general, son los que buscan proteger la seguridad y la privacidad de sus comunicaciones.  Al desarrollar este  proyecto se define como  usuarios principales a las personas que se encuentran en  diversos sectores;  como  ,  el  gubernamental ,  financiero,  personal o de salud;  y que requieren formas más seguras  de comunicación . Por ejemplo, tenemos  poblaciones amenazadas como  los  activistas de derechos humanos o periodistas que precisan de estas tecnologías de cifrado.
+
+## Los objetivos de estos usuarios  en relación con el producto
+
+El usuario tiene como objetivo o meta usar una plataforma de codificación de información sensible para evitar que esta llegue a las manos de terceros que no están autorizados para verla.
+Asimismo,  tiene la necesidad de seguridad, privacidad e integridad de sus documentos confidenciales  y/o personales.
+También le interesa la posibilidad de enviar información codificada por redes abiertas.
+
+##  El producto creado ésta resolviendo el problema
+
+El producto creado, permite comunicarse de manera segura, evita que alguien  pueda tener acceso a información que se desea preservar. Esta aplicación  consiste en alterar un mensaje  antes de transmitirlo, generalmente mediante la utilización de una clave (offset), de modo que su contenido no sea legible para los que no posean dicha clave. De esta forma, cualquier persona que tenga acceso al mensaje no podrá entender su contenido a menos que cuente con la clave para descifrarlo.
+Se genera una interfaz amigable, aumentando la satisfacción del usuario.
+
+## Cifrado César
 
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
 
@@ -219,7 +253,7 @@ para ver la descripción detallada de cada _habilidad_ y cada _nivel_. Esta es u
    también). Si usas Windows puedes usar [Git bash](https://git-scm.com/download/win),
    aunque recomendaría que consideres probar :penguin: GNU/Linux.
 3. Haz tu propio :fork_and_knife: [fork](https://help.github.com/articles/fork-a-repo/)
-   del repo de tu cohort, tus _coaches_ te compartirán un _link_ a un repo y te 
+   del repo de tu cohort, tus _coaches_ te compartirán un _link_ a un repo y te
    darán acceso de lectura en ese repo.
 4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
    tu _fork_ a tu computadora (copia local).

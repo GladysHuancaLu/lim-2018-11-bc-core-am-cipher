@@ -9,26 +9,28 @@
   padding: 10px;
   text-align: center;
   letter-spacing: 3px;
-  height: 10%;
+  height: 6vh;
 }
 
 .principal{
-  background-color: #dbe4ff;
+  background-image:url(../imagenes/neutro.jpg);
+  background-size: 100%  ;
   padding: 35px;
-  height: 68vh;
+  height: 74vh;
   text-align: center;
 
 }
 header{
   width: 100%;
-  height: 25vh;
-  background-image: url(http://footage.framepool.com/shotimg/qf/372477707-tren-de-alta-velocidad-canon-eos-5d-tokio-ciudad-arquitectura-moderna.jpg);
+  height: 20vh;
+  background-image:url(../imagenes/block.jpg);
+  background-size: 100% 100% ;
   color: #f8f9fa;
   text-align: center;
   letter-spacing: 3px;
   font-style: oblique;
-   font-size: 40px;
-   
+  font-size: 40px;
+
 }
 #section1{
   letter-spacing: 3px;
@@ -37,7 +39,6 @@ header{
 }
 
 .lineaCentro{
-
   background-color: #e9ecef;
 }
 
@@ -77,8 +78,8 @@ header{
 
 }
 .textarea{
-  width: 70%;
-  height: 100px;
+  width: 75%;
+  height: 160px;
 }
 
 #textoACifrar , #AquiTextoCifrado{
@@ -100,29 +101,28 @@ header{
   margin: 22px;
   color: #fff;
   text-transform: uppercase;
-    background: #3498db;
-    cursor: pointer;
-    font-family: 'Roboto';
+  background: #3498db;
+  cursor: pointer;
+  font-family: 'Roboto';
 }
 
 #limpiar , #volver{
-
-    background: #ff922b;
-
-
+  background: #ff922b;
 }
 
- #descifrar:hover {
+#descifrar:hover {
   background-color: #6FC6FF;
 }
 #cifrar:hover {
  background-color: #6FC6FF;
 }
 
-
-
 @media screen and (max-width:780px) {
   .texto{
     width: 100%;
   }
+  header{
+    font-size: 25px;
+  }
+
 }

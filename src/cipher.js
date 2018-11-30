@@ -6,7 +6,7 @@ const cifrar = (offset, textoInicial) => {
       textoFinal+=" ";
     }
     else{
-  textoFinal+= String.fromCharCode((textoMayuscula.charCodeAt(i)+65+offset)%26+65);
+  textoFinal+= String.fromCharCode((textoMayuscula.charCodeAt(i)+65+(offset%26))%26+65);
 }}
 return textoFinal;
 }
@@ -18,7 +18,7 @@ const descifrar = (offset, textoInicial) => {
       textoFinal+=" ";
     }
     else{
-  textoFinal+= String.fromCharCode((textoMayuscula.charCodeAt(i)+65-offset)%26+65);
+  textoFinal+= String.fromCharCode((textoMayuscula.charCodeAt(i)+65-(offset%26))%26+65);
   }
   }
 return textoFinal;
