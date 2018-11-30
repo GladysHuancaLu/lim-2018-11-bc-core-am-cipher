@@ -6,15 +6,18 @@
 
 
 .lineaCentro {
+  background-color: #f4edf6;
   padding: 10px;
   text-align: center;
   letter-spacing: 3px;
   height: 6vh;
+  color: #495057;
 }
 
 .principal{
   background-image:url(../imagenes/neutro.jpg);
   background-size: 100%  ;
+  background-repeat: repeat-y;
   padding: 35px;
   height: 74vh;
   text-align: center;
@@ -34,22 +37,35 @@ header{
 }
 #section1{
   letter-spacing: 3px;
-  font-size: 25px;
-  color: #868e96;
-}
+  font-size: 32px;
+  color: #475d62;
+  font-family: serif;
+  text-align: center;
 
-.lineaCentro{
-  background-color: #e9ecef;
 }
 
 #comenzar{
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #3498db;
+  cursor: pointer;
+  font-family: 'Roboto';
+  width: 200;
+  left: 50%;
+
+  /*
   background: #3498db;
   width: 120px;
   padding: 4px 0;
   left: 50%;
   top: 50%;
-  /* position: absolute;
-  transform: translateX(-50%) translateY(-50%);*/
+   position: absolute;
+  transform: translateX(-50%) translateY(-50%);
   border-radius: 6px;
 
  	font-family: 'Roboto';
@@ -58,9 +74,8 @@ header{
   color: #FFF;
   user-select: none;
 
-  cursor: pointer;
+  cursor: pointer; */
 }
-
 
 #section2{
   display: none;
@@ -69,29 +84,34 @@ header{
   width: 100%;
     /*border: 1px solid black;*/
   padding: 10px;
-
 }
 
 .texto{
   width: 50%;
   float: left;
-
 }
+
 .textarea{
   width: 75%;
   height: 160px;
+  color: #495057;
+  font-size: 22px;
+  font-family: serif;
+  border: 4px solid #ced4da;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 1px 2px #888888;
+  letter-spacing: 2px;
+  background-color: #fff0f6;
 }
 
 #textoACifrar , #AquiTextoCifrado{
-  border: 2px solid #adb5bd; /* Gris */
-  border-radius: 12px;
-  padding: 10px;
+
 }
 
 #offset{
   width: 60px;
 }
-
 
 #cifrar , #descifrar, #limpiar , #volver{
   border-radius: 8px;
@@ -104,6 +124,11 @@ header{
   background: #3498db;
   cursor: pointer;
   font-family: 'Roboto';
+}
+
+.letraLabel{
+  font-size: 20px;
+  color: #495057;
 }
 
 #limpiar , #volver{
@@ -124,5 +149,8 @@ header{
   header{
     font-size: 25px;
   }
+.principal{
 
+  height: 100vh;
+}
 }
