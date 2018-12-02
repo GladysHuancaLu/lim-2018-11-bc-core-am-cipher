@@ -19,19 +19,18 @@
 
           <main name="pantalla" class="principal" style="">
             <section id="section1">
-              <p>Convierte textos facil y rapido,<br> con un determinado número de desplazamiento <br>  los desplazamientos se dan hacia la derecha </p>
-                <br>
+              <p id="parrafo">Convierte textos facil y rapido,<br> con un determinado número de desplazamiento <br>  los desplazamientos se dan hacia la derecha </p>
                 <br>
 
               <input type="button" id="comenzar" value="Comenzar">
 
             </section>
             <section  id="section2">
-              <form class="formulario" action="index.html" method="post">
+              <form class="formulario" id="formulario" action="index.html" method="post">
                 <div class="texto">
                   <textarea id="textoACifrar" class="textarea" placeholder="Ingrese texto"></textarea>
-                  <div>
-                    <label class="letraLabel" for="offset">Ingrese offset:</label>
+                  <div class="letraLabel">
+                    <label  for="offset">Ingrese offset:</label>
                     <input  type="number" id="offset">
                   </div>
 
