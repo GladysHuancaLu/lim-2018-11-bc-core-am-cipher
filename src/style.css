@@ -39,7 +39,7 @@ main{
 #section1{
   margin: auto;
   padding: 40px;
-  width:50%;
+  width:70%;
   letter-spacing: 3px;
   font-size: 32px;
   color: #495057;
@@ -63,7 +63,7 @@ main{
   cursor: pointer;
   font-family: 'Roboto';
   width: auto;
-  left: 50%;
+  text-align: center;
 }
 
 #section2{
@@ -134,7 +134,11 @@ main{
  background-color: #ffa94d;
 }
 
-
+@media screen and (max-width:920px){
+  main{
+    height: 100vh;
+    }
+}
 @media screen and (max-width:780px) {
   .texto{
     width: 100%;
@@ -142,11 +146,10 @@ main{
   header{
     font-size: 25px;
   }
-.principal{
-
-  height: 100vh;
+main{
+  height: 130vh;
   }
   #section1{
-    width: 75%;
+    width: 100%;
   }
 }
